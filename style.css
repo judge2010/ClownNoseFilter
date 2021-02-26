@@ -1,0 +1,11 @@
+body{
+    background-image: url("background.jpg");
+}
+#heading{
+    font-size: 30px ;
+}
+canvas{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
