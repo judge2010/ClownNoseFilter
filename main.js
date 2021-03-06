@@ -20,14 +20,16 @@ function modelLoaded(){
 console.log("Model is loaded");
 };
 function gotPoses(results){
-   if(results.length > 0){
-console.log(results);
+ if(results.length > 0)
+{ console.log(results);
 nose_X = results[0].pose.nose.x;
-nose_Y = results[0].pose.nose.y;
-
-console.log(nose_X,nose_Y);
+nose_Y = results[0].pose.nose.y; };
+nose_X = nose_X - 190;
+nose_Y = nose_Y-80;
 };
-}; function draw(){
+
+
+ function draw(){
    image(video,0,0,350,350);
    fill(255, 0, 0);
    stroke(255, 0, 0);
